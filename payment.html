@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form | Home</title>
+    <link rel="stylesheet" href="/css/Style1.css">
+</head>
+
+<body>
+    <form>
+        <div class="body">
+            <div class="heading">
+                <h1><u>Payment Form</u></h1>
+            </div>
+            <h2>Payment Information<br>
+                <div class="info">Please fill all the columns
+                </div>
+            </h2>
+            <div class="paymentInformation">
+                <p>Card Type : &nbsp;
+                    <select name="card_type" id="card_type" required>
+                        <option value="">--Select a Card Type--</option>
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">Mastercard</option>
+                        <option value="rupay">Rupay</option>
+                    </select>
+                </p>
+                <p>
+                    Card Number : <input type="number" name="card_number" id="card_number" required placeholder="1111222233334444">
+                </p>
+                <p>
+                    Expiry Date : <input type="date" name="exp_date" id="exp_date" required>
+                </p>
+                <p>
+                    CVV : <input type="password" name="cvv" id="cvv" required placeholder="123">
+                </p>
+                <p>
+                    Name on Card : <input type="text" name="name_on_card" id="name_on_card" required placeholder="XYZ">
+                </p>
+                <input type="submit" id="insert" value="Pay Now"><a href="orderPlaced.html"></a>
+            </div>
+            <footer>
+                <a href="#">&copy;2023|ZENKART</a>
+            </footer>
+        </div>
+    </form>
+</body>
+
+</html>
